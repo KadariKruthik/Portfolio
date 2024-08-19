@@ -1,0 +1,88 @@
+.contact-form{
+  padding:0 3rem 0 3rem;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  height: auto;
+  margin-top:4rem;
+}
+
+
+.w-left {
+  flex:1;
+  display:flex;
+  flex-direction: column;                                    
+  align-items: flex-start; /* Align items to the left */
+  position: relative;
+  margin-bottom: 1rem
+   /* Add some spacing below "Contact Me" */
+}
+.awesome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0.8rem; /* Add spacing below the text */
+}
+
+.block-text {
+  display: block;
+  margin-bottom: 0.5rem; /* Reduce margin for better spacing */
+}
+
+.primary-text {
+  font-size: 2rem; /* Reduced font size */
+  font-weight: bold;
+}
+
+.secondary-text {
+  font-size: 2rem; /* Reduced font size */
+  font-weight: bold;
+  color: #F5C32C; /* Yellow color for "Contact Me" */
+}
+
+.c-right{
+  dislay:flex;
+  justify-content:center;
+  position:relative;
+  flex:1;
+}
+
+.c-right>form{
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  align-items:center;
+}
+
+.c-right .user,
+.c-right textarea {
+  width: 16rem; /* Reduced width for better fit */
+  padding: 0.5rem; /* Adjust padding for better fit */
+  outline: none;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+  font-size: 14px; /* Adjust font size for readability */
+  color: purple; /* Text color for input and textarea */
+}
+
+textarea{
+  height:4rem!important;
+  color:var(--purple)
+}
+
+.c-blur{
+  top:1rem;
+  left:8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

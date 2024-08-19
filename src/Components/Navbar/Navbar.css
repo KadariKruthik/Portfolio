@@ -1,0 +1,131 @@
+/* Default styles for larger screens */
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.n-left {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
+.n-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.n-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.n-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+.n-list > ul > li {
+  color: white;
+  transition: color 0.3s ease;
+  font: bold;
+}
+
+.n-list > ul > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+
+.n-button {
+  flex: 1.3;
+  width: 8rem;
+  height: 2.5rem;
+  padding: 0.5rem 1.3rem; /* Fixed padding */
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.n-button:hover {
+  background-color: var(--smboxShadow);
+}
+
+/* Mobile styles for max-width: 480px */
+@media (max-width: 480px) {
+  .n-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 1rem; /* Add padding for better spacing on small screens */
+  }
+
+  .n-left {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 1rem; /* Add gap below n-left */
+  }
+
+  .n-right {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%; /* Ensure it takes full width */
+    margin-top: -5rem; 
+    margin-left: 5rem;/* Add gap above n-right */
+  }
+
+  .n-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .n-list > ul {
+    display: flex;
+    flex-direction: column; /* Stack list items vertically */
+    gap: 1rem; /* Adjust gap between items */
+    margin-left:80px;
+    padding: 0;
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width for centering */
+    list-style-type: none;
+  }
+
+  .n-list > ul > li {
+    font-size: 1rem; /* Adjust font size */
+    color: #FCA61F; /* Text color */
+    text-align: center; /* Center text horizontally within list item */
+  }
+
+  .n-button {
+    width: 100%; /* Make button take full width */
+    margin-top: 1rem; /* Add margin-top for spacing */
+    padding: 0.7rem; /* Adjust padding for mobile */
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
+}
+

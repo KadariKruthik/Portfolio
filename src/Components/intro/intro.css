@@ -1,0 +1,171 @@
+/* Default styles for larger screens */
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 7rem;
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right > * {
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right > :nth-child(1) {
+    transform: scale(0.72%);
+    left: -15%;
+    top: -9%;
+}
+
+.i-right > :nth-child(2) {
+    transform: scale(0.67%);
+    left: -3rem;
+    top: -4.6%;
+}
+
+.i-right > :nth-child(3) {
+    transform: scale(1);
+    left: 11rem;
+    top: 4%;
+    border-radius: 100%;
+    background: linear-gradient(-15deg, lightyellow 20%, orange 100%);
+    padding: 10px;
+    border: 5px black;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name > :nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name > :nth-child(3) {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+.i-name > :nth-child(4) {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--gray);
+    margin-top: 10px;
+}
+
+.i-button {
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons {
+    margin-top: 0rem;
+    display: flex;
+    gap: 0rem;
+}
+
+.i-icons > * {
+    transform: scale(0.5);
+}
+
+.i-icons > *:hover {
+    cursor: pointer;
+}
+
+/* Mobile styles for max-width: 480px */
+/* Mobile styles for max-width: 480px */
+@media (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 3rem;
+        margin-bottom: 11rem; /* Adjust bottom margin for mobile */
+    }
+
+    .i-left {
+        flex: 1;
+        gap: 1rem; /* Reduce gap between items */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .i-right {
+        flex: 1;
+        width: 100%; /* Ensure it takes full width */
+        position: relative; /* Use relative positioning */
+        margin-top: 1rem; 
+        margin-bottom:11rem;/* Add margin-top for spacing */
+        text-align: center; /* Center align text */
+    }
+
+    .i-right > * {
+        position: absolute;
+        z-index: 1;
+        margin-bottom:3rem;
+    }
+
+    .i-right > :nth-child(1) {
+        transform: scale(0.5); /* Adjust scaling for mobile */
+        left: 5%; /* Adjust positioning for mobile */
+        top: -5%; /* Adjust positioning for mobile */
+    }
+
+    .i-right > :nth-child(2) {
+        transform: scale(0.45); /* Adjust scaling for mobile */
+        left: 0; /* Adjust positioning for mobile */
+        top: -2%; /* Adjust positioning for mobile */
+    }
+
+    .i-right > :nth-child(3) {
+        transform: scale(0.1); /* Reduce scaling for mobile view */
+        left: 50%; /* Center horizontally */
+        top: -5%; /* Adjust positioning for mobile */
+        border-radius: 50%; /* Ensure circular shape */
+        background: linear-gradient(-15deg, lightyellow 20%, orange 100%);
+        padding: 10px 20px 15px 25px;
+        border: 5px black;
+        box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.2);
+        margin-top: 0rem;
+        margin-bottom:10rem; /* Add margin-top to ensure it's below other elements */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    .i-name > :nth-child(1),
+    .i-name > :nth-child(2) {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .i-name > :nth-child(3) {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+    .i-name > :nth-child(4) {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    .i-icons > * {
+        transform: scale(0.4); /* Scale down icons */
+    }
+}
+

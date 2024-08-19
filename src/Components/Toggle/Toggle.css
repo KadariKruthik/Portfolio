@@ -1,0 +1,27 @@
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line */
+    border: 3px solid var(--orange);
+    border-radius: 1rem;
+    position: relative; /* Change from `position: 2px` to `position: relative` */
+    padding: 0.2rem; /* Add padding to make sure the button doesn't touch the edges */
+    cursor: pointer;
+    gap: 1rem; /* Remove quotes */
+}
+
+.toggle > * {
+    width: 1rem;
+    height: 1rem;
+    color: var(--orange);
+}
+
+.t-button {
+    width: 1rem; /* Set explicit width */
+    height: 1rem; /* Set explicit height */
+    border-radius: 50%; /* Ensure it's a circle */
+    background: var(--orange);
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}

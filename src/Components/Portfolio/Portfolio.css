@@ -1,0 +1,89 @@
+/* Portfolio.css */
+
+.slider-container {
+    width: 100%;
+    padding: 4rem;
+    margin-: 2rem;
+    text-align: center; /* Center the heading text */
+}
+
+/* Center and style the span elements as headings */
+/* Portfolio.css */
+
+/* Center container for headings */
+.slider-heading {
+    display: flex;
+    flex-direction: column; /* Stack the spans vertically */
+    justify-content: center; /* Center the spans vertically */
+    align-items: center; /* Center the spans horizontally */
+    margin-bottom: 20px; /* Adjust spacing between the heading and the carousels */
+    gap: 5px; /* Adjust spacing between the spans if needed */
+}
+
+/* Style for the first span (PROJECTS) */
+.slider-heading span:nth-of-type(1) {
+    color: #F5C32C;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Style for the second span (THUMBNAILS) */
+.slider-heading span:nth-of-type(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* Base style for each row */
+.slider-row {
+    margin-bottom: 20px; /* Adjust spacing between carousels */
+}
+
+/* Style for individual slides */
+.slick-slide {
+    padding: 0 10px; /* Horizontal spacing between slides */
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Additional styling for arrows if needed */
+.slick-prevArrow, .slick-nextArrow {
+    z-index: 2;
+    background-color: ;
+    
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        margin-bottom: 3rem; /* Adjust bottom margin for mobile */
+        padding: 1rem; /* Adjust padding if needed */
+    }
+
+    .slider-row {
+        margin-bottom: 2rem; /* Adjust spacing between carousels */
+    }
+
+    /* Increase size of slick-slide for better visibility on mobile */
+    .slick-slide {
+        padding: 0 5px; /* Reduce horizontal padding if needed */
+    }
+
+    /* Ensure images scale well within slides */
+    .slick-slide img {
+        width: 100%; /* Ensure image takes full width of slide */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Ensure arrows are well-positioned and visible on mobile */
+    .slick-prev, .slick-next {
+        width: 1.5rem; /* Adjust width of arrows */
+        height:1.5rem; /* Adjust height of arrows */
+        font-size: 1rem; /* Adjust size of arrow icons */
+    }
+}
+
