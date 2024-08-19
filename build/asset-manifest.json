@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.65ad21ea.css",
+    "main.js": "/static/js/main.3202d9d3.js",
+    "static/media/AvsH.png": "/static/media/AvsH.89d48fda4f50a667a0b4.png",
+    "static/media/Scary.jpg": "/static/media/Scary.3620a02d18b322c80493.jpg",
+    "static/media/Trumpp.jpg": "/static/media/Trumpp.b08bb9f27660dfeaf34a.jpg",
+    "static/media/RichPoor.jpg": "/static/media/RichPoor.b2275bac49eae41fed90.jpg",
+    "static/media/Directors1.jpg": "/static/media/Directors1.e189b594d1b60a6e4950.jpg",
+    "static/media/GAMING.jpg": "/static/media/GAMING.6bd062afc7a80934b78e.jpg",
+    "static/media/photo_remo.png": "/static/media/photo_remo.7e942a5e7c19ce4a5f20.png",
+    "static/media/wave.png": "/static/media/wave.fdfef4069ad90f610990.png",
+    "static/media/Vector2.png": "/static/media/Vector2.28db5bfd58081dd1df1b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.65ad21ea.css.map": "/static/css/main.65ad21ea.css.map",
+    "main.3202d9d3.js.map": "/static/js/main.3202d9d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65ad21ea.css",
+    "static/js/main.3202d9d3.js"
+  ]
+}
